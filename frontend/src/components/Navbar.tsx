@@ -1,39 +1,84 @@
-function Navbar() {
+import {
+    Moon,
+    Sun,
+} from "lucide-react";
+
+interface NavbarProps {
+    darkMode: boolean;
+    setDarkMode: (value: boolean) => void;
+}
+
+function Navbar({ darkMode, setDarkMode }: NavbarProps) {
     return (
-        <header className="border-b border-white/10">
-            <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-                <a href="/" className="text-xl font-semibold tracking-tight">
+        <header className="border-b border-black/10 dark:border-white/10">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
+
+                {/* Logo */}
+                <a
+                    href="/"
+                    className="text-xl font-semibold tracking-tight text-black dark:text-white"
+                >
                     ORBIT
                 </a>
 
+                {/* Navigation */}
                 <div className="hidden items-center gap-8 md:flex">
-                    <a href="#about" className="text-sm text-white/70 transition hover:text-white">
+
+                    <a
+                        href="#about"
+                        className="text-sm text-black/60 transition hover:text-black dark:text-white/70 dark:hover:text-white"
+                    >
                         About
                     </a>
 
-                    <a href="#skills" className="text-sm text-white/70 transition hover:text-white">
+                    <a
+                        href="#skills"
+                        className="text-sm text-black/60 transition hover:text-black dark:text-white/70 dark:hover:text-white"
+                    >
                         Skills
                     </a>
 
-                    <a href="#experience" className="text-sm text-white/70 transition hover:text-white">
+                    <a
+                        href="#experience"
+                        className="text-sm text-black/60 transition hover:text-black dark:text-white/70 dark:hover:text-white"
+                    >
                         Experience
                     </a>
 
-                    <a href="#projects" className="text-sm text-white/70 transition hover:text-white">
+                    <a
+                        href="#projects"
+                        className="text-sm text-black/60 transition hover:text-black dark:text-white/70 dark:hover:text-white"
+                    >
                         Projects
                     </a>
 
-                    <a href="#contact" className="text-sm text-white/70 transition hover:text-white">
+                    <a
+                        href="#contact"
+                        className="text-sm text-black/60 transition hover:text-black dark:text-white/70 dark:hover:text-white"
+                    >
                         Contact
                     </a>
+
                 </div>
 
-                <a
-                    href="#contact"
-                    className="hidden rounded-full border border-white/20 px-4 py-2 text-sm transition hover:bg-white hover:text-black md:block"
+                {/* Theme Toggle */}
+                {/* Theme Toggle */}
+                <button
+                    type="button"
+                    onClick={() => setDarkMode(!darkMode)}
+                    aria-label={
+                        darkMode
+                            ? "Switch to light mode"
+                            : "Switch to dark mode"
+                    }
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-black/15 text-black transition hover:bg-black hover:text-white dark:border-white/20 dark:text-white dark:hover:bg-white dark:hover:text-black"
                 >
-                    Let's Talk
-                </a>
+                    {darkMode ? (
+                        <Sun size={20} strokeWidth={1.8} />
+                    ) : (
+                        <Moon size={20} strokeWidth={1.8} />
+                    )}
+                </button>
             </nav>
         </header>
     );
