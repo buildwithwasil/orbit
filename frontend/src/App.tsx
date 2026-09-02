@@ -11,14 +11,10 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {
         document.documentElement.classList.toggle("dark", darkMode);
-        document.documentElement.classList.toggle("light", !darkMode);
-
-        document.body.classList.toggle("dark", darkMode);
-        document.body.classList.toggle("light", !darkMode);
     }, [darkMode]);
 
     return (

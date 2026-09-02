@@ -30,7 +30,7 @@ function Hero() {
                         {/* View Projects */}
                         <a
                             href="#projects"
-                            className="rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-black/80 dark:bg-white dark:text-black dark:hover:bg-white/80"
+                            className="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-black/80 dark:bg-white dark:text-black dark:hover:bg-white/80"
                         >
                             View Projects →
                         </a>
