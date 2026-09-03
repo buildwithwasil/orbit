@@ -1,6 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Mail } from "lucide-react";
-import { SiFiverr } from "react-icons/si";
 
 function Hero() {
     return (
@@ -25,6 +24,7 @@ function Hero() {
                         practical engineering.
                     </p>
 
+                    {/* Buttons */}
                     <div className="mt-8 flex flex-wrap gap-4">
 
                         {/* View Projects */}
@@ -38,7 +38,7 @@ function Hero() {
                         {/* Contact */}
                         <a
                             href="#contact"
-                            className="rounded-full border border-black/20 px-6 py-3 text-sm font-medium text-black transition hover:bg-black hover:text-white dark:border-white/20 dark:text-white dark:hover:bg-white dark:hover:text-black"
+                            className="inline-flex items-center justify-center rounded-full border border-black/20 px-6 py-3 text-sm font-medium text-black transition-colors duration-200 hover:bg-black hover:text-white dark:border-white/20 dark:text-white dark:hover:bg-white dark:hover:text-black"
                         >
                             Contact Me
                         </a>
@@ -46,41 +46,46 @@ function Hero() {
                     </div>
 
                     {/* Social / Location */}
-                    <div className="mt-10 flex items-center gap-6 text-black/50 dark:text-white/50">
+                    <div className="mt-10 flex items-center gap-6">
 
+                        {/* GitHub */}
                         <a
                             href="https://github.com/buildwithwasil"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="GitHub"
-                            className="transition hover:text-black dark:hover:text-white"
+                            className="text-black transition-colors hover:text-black/70 dark:text-white dark:hover:text-white/70"
                         >
                             <FaGithub size={28} />
                         </a>
 
+                        {/* LinkedIn */}
                         <a
                             href="https://www.linkedin.com/in/wasilahmad1/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
-                            className="transition hover:text-black dark:hover:text-white"
+                            className="text-black transition-colors hover:text-black/70 dark:text-white dark:hover:text-white/70"
                         >
-                           <FaLinkedin size={28} />
+                            <FaLinkedin size={28} />
                         </a>
 
+                        {/* Email */}
                         <a
                             href="mailto:wasil.ahmad786@gmail.com"
                             aria-label="Email"
-                            className="transition hover:text-black dark:hover:text-white"
+                            className="text-black transition-colors hover:text-black/70 dark:text-white dark:hover:text-white/70"
                         >
                             <Mail size={28} />
                         </a>
 
-                        <span className="text-black/20 dark:text-white/20">
+                        {/* Divider */}
+                        <span className="text-black dark:text-white">
                             |
                         </span>
 
-                        <span>
+                        {/* Location */}
+                        <span className="text-base font-semibold text-black dark:text-white">
                             📍 Bengaluru, India
                         </span>
 
