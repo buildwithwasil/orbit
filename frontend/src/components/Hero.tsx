@@ -54,7 +54,7 @@ function Hero() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="GitHub"
-                            className="text-black transition-colors hover:text-black/70 dark:text-white dark:hover:text-white/70"
+                            className="text-black/50 transition-colors duration-200 hover:text-black dark:text-white/50 dark:hover:text-white"
                         >
                             <FaGithub size={28} />
                         </a>
@@ -65,7 +65,7 @@ function Hero() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
-                            className="text-black transition-colors hover:text-black/70 dark:text-white dark:hover:text-white/70"
+                            className="text-black/50 transition-colors duration-200 hover:text-black dark:text-white/50 dark:hover:text-white"
                         >
                             <FaLinkedin size={28} />
                         </a>
@@ -74,7 +74,7 @@ function Hero() {
                         <a
                             href="mailto:wasil.ahmad786@gmail.com"
                             aria-label="Email"
-                            className="text-black transition-colors hover:text-black/70 dark:text-white dark:hover:text-white/70"
+                            className="text-black/50 transition-colors duration-200 hover:text-black dark:text-white/50 dark:hover:text-white"
                         >
                             <Mail size={28} />
                         </a>
