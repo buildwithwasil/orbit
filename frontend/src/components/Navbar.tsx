@@ -51,6 +51,12 @@ function Navbar({ darkMode, setDarkMode }: NavbarProps) {
                     >
                         Projects
                     </a>
+                    <a
+                        href="#coding-profiles"
+                        className="text-sm text-black/60 transition hover:text-black dark:text-white/70 dark:hover:text-white"
+                    >
+                        CodingProfiles
+                    </a>
 
                     <a
                         href="#contact"

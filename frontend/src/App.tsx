@@ -6,7 +6,7 @@ import About from "./components/About";
 import Skill from "./components/Skill";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-import Education from "./components/Education";
+import CodingProfiles from "./components/CodingProfiles";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -36,7 +36,7 @@ function App() {
                 <Skill />
                 <Experience />
                 <Projects />
-                <Education />
+                <CodingProfiles />
                 <Contact />
             </main>
 
