@@ -1,4 +1,11 @@
-const experiences = [
+type Experience = {
+    year: string;
+    company: string;
+    role: string;
+    description: string;
+    technologies: string[];
+};
+const experiences: Experience[] = [
     {
         year: "Feb 2026 – May 2026",
         company: "MindMatrix",
@@ -119,7 +126,7 @@ function Experience() {
     );
 }
 
-function ExperienceCard({ experience }) {
+function ExperienceCard({ experience }: { experience: Experience }) {
     return (
         <article
             className="
