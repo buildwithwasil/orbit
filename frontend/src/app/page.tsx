@@ -1,16 +1,18 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skill from "./components/Skill";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import CodingProfiles from "./components/CodingProfiles";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Skill from "../components/Skill";
+import Experience from "../components/Experience";
+import Projects from "../components/Projects";
+import CodingProfiles from "../components/CodingProfiles";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
-function App() {
+export default function Page() {
     const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {
@@ -44,5 +46,3 @@ function App() {
         </div>
     );
 }
-
-export default App;

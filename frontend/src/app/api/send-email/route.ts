@@ -1,17 +1,7 @@
-/// <reference types="node" />
-
 import { Resend } from "resend";
-
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(request: Request) {
-    if (request.method !== "POST") {
-        return Response.json(
-            { message: "Method not allowed" },
-            { status: 405 }
-        );
-    }
-
+export async function POST(request: Request) {
     try {
         const { name, email, subject, message } = await request.json();
 
