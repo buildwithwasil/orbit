@@ -9,7 +9,7 @@ function Hero() {
                 {/* Left side */}
                 <div>
                     <p className="mb-5 text-sm font-medium uppercase tracking-[0.25em] text-black/50 dark:text-white/50">
-                        Software Engineer
+                        AI & Data Engineer
                     </p>
 
                     <h1 className="text-5xl font-bold tracking-tight text-black sm:text-6xl lg:text-7xl dark:text-white">
@@ -18,16 +18,22 @@ function Hero() {
                         Ahmad
                     </h1>
 
-                    <p className="mt-6 max-w-xl text-lg leading-8 text-black/60 dark:text-white/60">
-                        I build scalable web applications, backend systems,
-                        and AI-powered solutions with a focus on clean and
-                        practical engineering.
+                    <p className="mt-6 max-w-2xl text-xl font-semibold leading-8 text-black/80 dark:text-white/80">
+                        Applied AI • Data Science • Data Engineering
+                        <br className="hidden sm:block" />
+                        ETL & Data Processing • Machine Learning • GenAI & LLMs
+                    </p>
+
+                    <p className="mt-5 max-w-2xl text-lg leading-8 text-black/60 dark:text-white/60">
+                        I build AI-powered applications and scalable data systems,
+                        working across data pipelines, ETL, machine learning, and
+                        intelligent applications to transform raw data into
+                        reliable insights and AI-driven solutions.
                     </p>
 
                     {/* Buttons */}
                     <div className="mt-8 flex flex-wrap gap-4">
 
-                        {/* View Projects */}
                         <a
                             href="#projects"
                             className="
@@ -51,7 +57,6 @@ function Hero() {
                             View Projects →
                         </a>
 
-                        {/* Contact */}
                         <a
                             href="#contact"
                             className="
@@ -78,7 +83,6 @@ function Hero() {
                     {/* Social / Location */}
                     <div className="mt-10 flex items-center gap-6">
 
-                        {/* GitHub */}
                         <a
                             href="https://github.com/buildwithwasil"
                             target="_blank"
@@ -95,7 +99,6 @@ function Hero() {
                             <FaGithub size={28} />
                         </a>
 
-                        {/* LinkedIn */}
                         <a
                             href="https://www.linkedin.com/in/wasilahmad1/"
                             target="_blank"
@@ -112,7 +115,6 @@ function Hero() {
                             <FaLinkedin size={28} />
                         </a>
 
-                        {/* Email */}
                         <a
                             href="mailto:wasil.ahmad786@gmail.com"
                             aria-label="Email"
@@ -127,12 +129,10 @@ function Hero() {
                             <Mail size={28} />
                         </a>
 
-                        {/* Divider */}
                         <span className="text-black dark:text-white">
                             |
                         </span>
 
-                        {/* Location */}
                         <span className="text-base font-semibold text-black dark:text-white">
                             📍 Bengaluru, India
                         </span>
